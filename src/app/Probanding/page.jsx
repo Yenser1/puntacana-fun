@@ -1,30 +1,29 @@
-import React from "react";
-import AnimatedContent from "@/app/Components/AnimatedContent";
+import SplitText from "../Components/SplitText";
+import CircularText from "../Components/CircularText";
 
-function Page() {
-  return (
-    <div style={{ height: '200vh', padding: '50px' }}>
-      <h1>Mi página de prueba</h1>
+const handleAnimationComplete = () => {
+  console.log('All letters have animated!');
+};
 
-      <AnimatedContent
-        distance={150}
-        direction="horizontal"
-        reverse={false}
-        duration={1.2}
-        ease="bounce.out"
-        initialOpacity={0.2}
-        animateOpacity
-        scale={1.1}
-        threshold={0.2}
-        delay={0.3}
-      >
-        <div style={{ background: '#eee', padding: '30px', textAlign: 'center' }}>
-          <h2>Este contenido se anima al hacer scroll</h2>
-          <p>Prueba bajando con el scroll para ver la animación.</p>
-        </div>
-      </AnimatedContent>
-    </div>
-  );
+export default function paprobar(){
+  return <div className="p-0 m-0">
+            <div className="h-screen w-screen flex flex-col justify-center items-center p-0 m-0">
+                <SplitText 
+                  text='Hola perdida' 
+                  className="text-[10vw]"
+                />
+                <CircularText
+                  text="PUNTA 🌞 CANA 🌞 FUN 🌞 "
+                  onHover="speedUp"
+                  spinDuration={20}
+                  className="custom-class text-yellow-500"
+                />
+                <CircularText
+                  text="TOURS-BIEN-BARATOS-"
+                  onHover=""
+                  spinDuration={20}
+                  className="custom-class text-yellow-500"
+                />
+            </div>
+         </div>
 }
-
-export default Page;
