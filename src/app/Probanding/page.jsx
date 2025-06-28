@@ -1,16 +1,23 @@
+import ScrambledText from '../Components/ScrambleText';
 import SplitText from "../Components/SplitText";
 import CircularText from "../Components/CircularText";
-
-const handleAnimationComplete = () => {
-  console.log('All letters have animated!');
-};
+import Squares from '../Components/Squares';
 
 export default function paprobar(){
   return <div className="p-0 m-0">
-            <div className="h-screen w-screen flex flex-col justify-center items-center p-0 m-0">
-                <SplitText 
-                  text='Hola perdida' 
-                  className="text-[10vw]"
+            <div className="h-max w-screen flex flex-col justify-center items-center p-0 m-0">
+              <div className='absolute h-screen w-screen -z-40'>
+                <Squares 
+                  speed={0.5} 
+                  squareSize={40}
+                  direction='diagonal' // up, down, left, right, diagonal
+                  borderColor='#333'
+                  hoverFillColor='#222'
+                />
+              </div>
+                <SplitText  
+                  text='This is PUNTA CANA FUN' 
+                  className="text-[4vw]"
                 />
                 <CircularText
                   text="PUNTA 🌞 CANA 🌞 FUN 🌞 "
@@ -24,6 +31,18 @@ export default function paprobar(){
                   spinDuration={20}
                   className="custom-class text-yellow-500"
                 />
+                <ScrambledText
+                  className="scrambled-text-demo"
+                  radius={80}
+                  duration={1.2}
+                  speed={0.5}
+                  scrambleChars={'.:'}
+                >
+                  Probando texto porque al probar el texto yo lo pruebo
+                  con mucho esmejor y sinceramente esto va a ser muy inutil
+                  en cuanto a la pagina de punta cana fun pero es curioso
+                  probarlo de manera
+                </ScrambledText>
             </div>
          </div>
 }

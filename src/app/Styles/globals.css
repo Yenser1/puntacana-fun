@@ -26,3 +26,26 @@ body {
   margin: 0;
   padding: 0;
 }
+.headingheight{
+  height: clamp(80px, 15vh, 900px);
+}
+.eishun{
+    font-size: clamp(2.2rem, calc(1.5vw + 1rem), 5rem);
+}
+.paragraf{
+    font-size: clamp(16px, calc(1vw + 1rem - 1rem), 3rem);
+}
+.navlinks{
+    font-size: clamp(16px, 1.7vw, 4rem);
+}
+.paragrafbot{
+    font-size: clamp(10px,1vw,5rem);
+}
+.copira{
+    font-size: clamp(1rem, 2vw, 5rem);
+}
+.persona{
+    padding: 20px;
+    background-color: color-mix(in srgb, lightblue 40%, transparent 60%);
+    border-radius: 30px;
+}
