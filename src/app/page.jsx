@@ -1,4 +1,11 @@
 import Image from "next/image";
+import EmblaCarousel from './Components/EmblaCarousel';
+import './Styles/base.css'
+import './Styles/embla.css'
+
+const OPTIONS = { align: 'start' }
+const SLIDE_COUNT = 6
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
 export default function LadingPage() {
   return (
@@ -7,7 +14,8 @@ export default function LadingPage() {
       <section className="Destinos-Turisticos"
       >
         <h1 className=""
-        >Destinos Turistics
+        >
+          Destinos Turistics
         </h1>
         <div className="Destinos-Carousel"
         >
@@ -46,6 +54,7 @@ export default function LadingPage() {
 
           </div>
         </section>
+        <EmblaCarousel slides={SLIDES} options={OPTIONS} />
     </main>
   );
 }

@@ -3,6 +3,16 @@ import SplitText from "../Components/SplitText";
 import CircularText from "../Components/CircularText";
 import Squares from '../Components/Squares';
 
+
+import EmblaCarousel from '../Components/EmblaCarousel';
+import '../Styles/base.css'
+import '../Styles/embla.css'
+
+const OPTIONS = { align: 'start' }
+const SLIDE_COUNT = 6
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
+
+
 export default function paprobar(){
   return <div className="p-0 m-0">
             <div className="h-max w-screen flex flex-col justify-center items-center p-0 m-0">
@@ -10,12 +20,12 @@ export default function paprobar(){
                 <Squares 
                   speed={0.5} 
                   squareSize={40}
-                  direction='diagonal' // up, down, left, right, diagonal
+                  direction='up'
                   borderColor='#333'
                   hoverFillColor='#222'
                 />
               </div>
-                <SplitText  
+                <SplitText
                   text='This is PUNTA CANA FUN' 
                   className="text-[4vw]"
                 />
@@ -43,6 +53,7 @@ export default function paprobar(){
                   en cuanto a la pagina de punta cana fun pero es curioso
                   probarlo de manera
                 </ScrambledText>
+                <EmblaCarousel slides={SLIDES} options={OPTIONS} />
             </div>
          </div>
 }

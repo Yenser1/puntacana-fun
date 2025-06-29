@@ -1,5 +1,8 @@
 export default function Contacto(){
     return (
-        <h1>Contacto</h1>
+        <main>
+            <h1>Contacto</h1>
+        </main>
+        
     )
 }

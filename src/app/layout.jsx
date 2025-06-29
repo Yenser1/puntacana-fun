@@ -23,27 +23,40 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased p-0 m-0`}
       >
-      <header className="w-full headingheight sticky top-0 z-100 flex
+      <header className="w-full sticky top-0 z-100 flex
                         justify-center bg-[#87ceeb] flex-col
-                        pb-[3%] items-center h-max"
+                        pb-[3%] items-center"
+              style={{
+                height: 'clamp(80px, 23vh, 300rem)',
+                color: 'white'
+              }}
       >
         <Image src="/PuntaCana.png"
-              width={400}
-              height={300}
+              width={2000}
+              height={1000}
               alt="Punta Cana Fun"
-              className="fotoHeading relative"
+              style={{
+                filter: 'drop-shadow(0 0 25px #333)',
+                width: 'clamp(200px, 20vw, 600px)',
+              }}
         />
         <div>
-          <ul className="flex gap-5 navlinks"
+          <ul className="flex gap-5 navlinks font-mono"
           >
-            <a href="/"><li>Inicio</li></a>
-            <a href="./Acerca-De-Nosotros"><li>Acerca de Nosotros</li></a>
-            <a href="./Contacto"><li>Contacto</li></a>
-            <a href="./Tours-Y-Excursiones"><li>Tours y Excursiones</li></a>
+            <a href="/">
+            <li>Inicio</li>
+            </a>
+            <a href="./Acerca-De-Nosotros">
+            <li>Acerca de Nosotros</li>
+            </a>
+            <a href="./Contacto">
+            <li>Contacto</li>
+            </a>
+            <a href="./Tours-Y-Excursiones">
+            <li>Tours y Excursiones</li>
+            </a>
           </ul>
-        </div>
-        
-        
+        </div>        
       </header>
 
 
@@ -51,11 +64,13 @@ export default function RootLayout({ children }) {
         {children}
 
 
+
       <footer className="w-full bg-red-800 flex
-                        justify-center"
+                        justify-center footerBG"
       >
         <h1 className="text-6xl"
-        >This is the footer</h1>
+        >This is the footer
+        </h1>
       </footer>
       </body>
     </html>

@@ -26,9 +26,6 @@ body {
   margin: 0;
   padding: 0;
 }
-.headingheight{
-  height: clamp(80px, 15vh, 900px);
-}
 .eishun{
     font-size: clamp(2.2rem, calc(1.5vw + 1rem), 5rem);
 }
@@ -48,4 +45,21 @@ body {
     padding: 20px;
     background-color: color-mix(in srgb, lightblue 40%, transparent 60%);
     border-radius: 30px;
+}
+header {
+        background-image: url('/FondoPlaya.png');
+        background-size: cover;
+        background-position: top ;
+        mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+}
+footer {
+        background-image: url(/BlurSand.png);
+        background-size: cover;
+        mask-image: linear-gradient(to top, black 60%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to top, black 60%, transparent 100%);
+}
+body {
+        background-image: url(/FondoArena.png);
+        background-size: fit;
 }

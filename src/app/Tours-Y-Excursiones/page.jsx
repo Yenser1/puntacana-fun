@@ -1,5 +1,8 @@
 export default function ToursYExcursiones(){
     return(
-        <h1>Tours y Excursiones</h1>
+        <main>
+            <h1>Tours y Excursiones</h1>
+        </main>
+        
     )
 }
