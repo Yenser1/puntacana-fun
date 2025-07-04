@@ -1,7 +1,16 @@
 import Image from "next/image";
+import { Roboto, Lexend_Giga } from "next/font/google";
 import EmblaCarousel from './Components/EmblaCarousel';
 import './Styles/base.css'
 import './Styles/embla.css'
+
+const roboto = Roboto ({
+  subsets: ['latin']
+})
+const lexend = Lexend_Giga({
+  subsets: ['latin'],
+  weight: '400'
+})
 
 const OPTIONS = { align: 'start', loop: true, draggable: true}
 const SLIDE_COUNT = 8
@@ -13,9 +22,9 @@ export default function LadingPage() {
     >
       <section className="Destinos-Turisticos w-full"
       >
-        <h1 className="heading text-center"
+        <h1 className={`${lexend.className} heading text-center`}
         >
-          Destinos Turisticos
+          DESTINOS TURISTICOS
         </h1>
         <EmblaCarousel slides={SLIDES} options={OPTIONS} />
       </section>

@@ -16,7 +16,7 @@ function Header(){
                 color: 'white'
               }}
       >
-        <a href="/">
+        <Link href="/">
           <Image src="/PuntaCana.png"
               width={2000}
               height={1000}
@@ -27,7 +27,7 @@ function Header(){
               }}
               className="hover:scale-110 transition-transform duration-350"
         />
-        </a>
+        </Link>
               <HamburguerMenu/>
         <div>
           <nav className="flex gap-10 navlinks font-mono"
