@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Punta - Cana Fun",
-  description: "Punta Cana Fun Website",
+  description: "Esta es la copia y pagina de aprendizaje de yenser basado en una empresa turistica Punta Cana Fun",
 };
 
 

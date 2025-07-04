@@ -26,7 +26,7 @@ body {
   margin: 0;
   padding: 0;
 }
-.eishun{
+.heading{
     font-size: clamp(2.2rem, calc(1.5vw + 1rem), 5rem);
 }
 .paragraf{

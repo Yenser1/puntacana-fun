@@ -3,23 +3,21 @@ import EmblaCarousel from './Components/EmblaCarousel';
 import './Styles/base.css'
 import './Styles/embla.css'
 
-const OPTIONS = { align: 'start' }
-const SLIDE_COUNT = 10
+const OPTIONS = { align: 'start', loop: true, draggable: true}
+const SLIDE_COUNT = 8
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
 export default function LadingPage() {
   return (
     <main className="Landing-Page"
     >
-      <section className="Destinos-Turisticos"
+      <section className="Destinos-Turisticos w-full"
       >
-        <h1 className=""
+        <h1 className="heading text-center"
         >
-          Destinos Turistics
+          Destinos Turisticos
         </h1>
-        <div className="Destinos-Carousel"
-        >
-        </div>
+        <EmblaCarousel slides={SLIDES} options={OPTIONS} />
       </section>
       <section className="Que-Piensa-Lagente"
       >
@@ -54,7 +52,6 @@ export default function LadingPage() {
 
           </div>
         </section>
-        <EmblaCarousel slides={SLIDES} options={OPTIONS} />
     </main>
   );
 }

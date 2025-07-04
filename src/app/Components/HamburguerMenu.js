@@ -1,13 +1,10 @@
 'use client';
 
-window
-
 function HamburguerMenu(){
   return (
         <div className="absolute top-1/3 right-3 cursor-pointer"
              onClick={()=>{
-                let menu = window.document.querySelector(".menu")
-                menu.className("block")
+                console.log("Click")
              }}
         >
             <svg
