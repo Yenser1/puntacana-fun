@@ -4,7 +4,7 @@ import './Styles/base.css'
 import './Styles/embla.css'
 
 const OPTIONS = { align: 'start' }
-const SLIDE_COUNT = 6
+const SLIDE_COUNT = 10
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
 export default function LadingPage() {

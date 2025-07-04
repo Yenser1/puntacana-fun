@@ -61,5 +61,5 @@ footer {
 }
 body {
         background-image: url(/FondoArena.png);
-        background-size: fit;
+        background-size: cover;
 }
