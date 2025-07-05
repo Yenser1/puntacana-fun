@@ -17,7 +17,7 @@ const montserrat = Montserrat({
 })
 
 const DESTINOS = [
-  <div className="bg-red-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative">
+  <div className="bg-red-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative hover:scale-200 cursor-pointer">
     <Image src={'/SantoDomingoBG.png'}
            fill
            className="rounded-4xl"
@@ -81,7 +81,7 @@ const DESTINOS = [
     >Montana Redonda</h1>
   </div>,
   <div className="bg-green-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative">
-    <Image src={'/MontanaRedonaBG.jpg'}
+    <Image src={'/IslaSaonaBG.jpg'}
            fill
            className="rounded-4xl"
            alt="Imagen de fondo de Isla Saona"
@@ -91,7 +91,7 @@ const DESTINOS = [
   </div>,
   
   <div className="bg-green-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative">
-    <Image src={'/MontanaRedonaBG.jpg'}
+    <Image src={'/IslaCatalinaBG.jpg'}
            fill
            className="rounded-4xl"
            alt="Imagen de fondo de Isla Catalinas"
@@ -108,7 +108,7 @@ export default function LadingPage() {
       <div style={{position: 'relative', height: '180px'}}>
         <TextPressure
           className='heading'
-          text="BIENVENIDOS-A-LA-DIVERSION"
+          text="BIENVENIDOS-A-LA-DIVERSIÓN"
           flex={true}
           alpha={false}
           stroke={false}
@@ -137,7 +137,7 @@ export default function LadingPage() {
       >
         <SplitText
           className={`${lexend.className} heading text-center`}
-          text="QUE PIENSAN DE NOSOTROS"
+          text="QUE PIENSAN DE NOSOTROS 🤔"
           splitType="chars"
         />
           <div className="piensan w-full flex flex-wrap justify-between items-center "
@@ -181,7 +181,7 @@ export default function LadingPage() {
           <div className="flex p-0"
           >
           <ScrambledText
-            className="paragraf"
+            className="paragraf text-justify p-[2%]"
             radius={70}
             duration={1.2}
             speed={0.5}
@@ -197,7 +197,7 @@ export default function LadingPage() {
         >
           <SplitText
             className={`${lexend.className} heading text-center`}
-            text="Contacto"
+            text="Contacto 📠"
           />
           <div className="Contactanos"
           >
