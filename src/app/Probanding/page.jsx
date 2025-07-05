@@ -4,6 +4,7 @@ import SplitText from "../Components/SplitText";
 import CircularText from "../Components/CircularText";
 import Squares from '../Components/Squares';
 import TextPressure from '../Components/TextPressure';
+import Card from '../Components/Card';
 
 import EmblaCarousel from '../Components/EmblaCarousel';
 import '../Styles/base.css'
@@ -18,13 +19,6 @@ export default function paprobar(){
   return <div className="p-0 m-0">
             <div className="h-max w-screen flex flex-col justify-center items-center p-0 m-0">
               <div className='absolute h-screen w-screen -z-40'>
-                <Squares 
-                  speed={0.5} 
-                  squareSize={40}
-                  direction='up'
-                  borderColor='#333'
-                  hoverFillColor='#222'
-                />
               </div>
                 <SplitText
                   text='This is PUNTA CANA FUN' 
@@ -42,18 +36,7 @@ export default function paprobar(){
                   spinDuration={20}
                   className="custom-class text-yellow-500"
                 />
-                <ScrambledText
-                  className="scrambled-text-demo"
-                  radius={80}
-                  duration={1.2}
-                  speed={0.5}
-                  scrambleChars={'.:'}
-                >
-                  Probando texto porque al probar el texto yo lo pruebo
-                  con mucho esmejor y sinceramente esto va a ser muy inutil
-                  en cuanto a la pagina de punta cana fun pero es curioso
-                  probarlo de manera
-                </ScrambledText>
+                
                 <EmblaCarousel slides={SLIDES} options={OPTIONS} />
                 <div style={{position: 'relative', height: '300px'}}>
                   <TextPressure
@@ -70,6 +53,13 @@ export default function paprobar(){
                     minFontSize={130}
                   />
                 </div>
+                
+                  <Card className={""}
+                        personaStyle={"text-black"}
+                        persona={'Francisco Alberto del Rosario'}
+                        contenido={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima architecto ducimus sed pariatur tempora, enim, itaque dolores natus vel laudantium omnis voluptatem ipsam nostrum nobis aperiam repudiandae, voluptates labore dignissimos.'}
+                  />
+                  
             </div>
          </div>
 } 
