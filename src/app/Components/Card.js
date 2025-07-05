@@ -7,7 +7,9 @@ function Card({ persona, contenido, svg, className, personaStyle }){
         >
             <h1 className={"headingfoot" +" "+ personaStyle}
             >{persona}</h1>
-            {svg}
+            {()=>{
+                return(svg)
+            }}
             <ScrambledText
             className="paragraf text-justify p-[2%]"
             radius={70}

@@ -2,7 +2,6 @@
 import ScrambledText from '../Components/ScrambleText';
 import SplitText from "../Components/SplitText";
 import CircularText from "../Components/CircularText";
-import Squares from '../Components/Squares';
 import TextPressure from '../Components/TextPressure';
 import Card from '../Components/Card';
 
@@ -54,12 +53,24 @@ export default function paprobar(){
                   />
                 </div>
                 
+                <div className='flex justify-between p-[4%]'
+                >
                   <Card className={""}
                         personaStyle={"text-black"}
-                        persona={'Francisco Alberto del Rosario'}
+                        persona={'Francisco Alberto'}
                         contenido={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima architecto ducimus sed pariatur tempora, enim, itaque dolores natus vel laudantium omnis voluptatem ipsam nostrum nobis aperiam repudiandae, voluptates labore dignissimos.'}
                   />
-                  
+                  <Card className={""}
+                        personaStyle={"text-black"}
+                        persona={'Juanito Alimana'}
+                        contenido={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima architecto ducimus sed pariatur tempora, enim, itaque dolores natus vel laudantium omnis voluptatem ipsam nostrum nobis aperiam repudiandae, voluptates labore dignissimos.'}
+                  />
+                  <Card className={""}
+                        personaStyle={"text-black"}
+                        persona={'Bob-Patino'}
+                        contenido={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima architecto ducimus sed pariatur tempora, enim, itaque dolores natus vel laudantium omnis voluptatem ipsam nostrum nobis aperiam repudiandae, voluptates labore dignissimos.'}
+                  />
+                </div>                  
             </div>
          </div>
 } 
