@@ -3,6 +3,7 @@ import Link from "next/link"
 import * as React from "react";
 import Navbar from "./Navbar";
 
+
 function Footer(){
     return (
         <footer className="w-full bg-red-800 flex flex-wrap

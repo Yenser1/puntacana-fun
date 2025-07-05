@@ -52,9 +52,7 @@ body {
     font-size: clamp(1rem, 2vw, 5rem);
 }
 .persona{
-    padding: 20px;
-    background-color: color-mix(in srgb, lightblue 40%, transparent 60%);
-    border-radius: 30px;
+    font-size: clamp(2rem, 1.4vw, 5rem);
 }
 .socialLinks{
   width: clamp(50px, 2vw, 150px);

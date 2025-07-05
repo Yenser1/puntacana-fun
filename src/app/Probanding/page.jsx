@@ -72,4 +72,4 @@ export default function paprobar(){
                 </div>
             </div>
          </div>
-}
+} 
