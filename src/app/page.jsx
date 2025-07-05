@@ -17,7 +17,7 @@ const montserrat = Montserrat({
 })
 
 const DESTINOS = [
-  <div className="bg-red-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative hover:scale-200 cursor-pointer">
+  <div className="bg-red-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative">
     <Image src={'/SantoDomingoBG.png'}
            fill
            className="rounded-4xl"
