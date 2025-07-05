@@ -1,6 +1,7 @@
 .embla {
-  max-width: 70vw;
+  max-width: 80vw;
   margin: auto;
+  margin-bottom: 10vh;
   --slide-height: 19rem;
   --slide-spacing: 1rem;
   --slide-size: 100%;
@@ -30,7 +31,6 @@
 }
 .embla__slide {
   min-width: 0;
-  min-height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;

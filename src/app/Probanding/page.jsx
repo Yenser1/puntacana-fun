@@ -1,10 +1,9 @@
+'use client'
 import ScrambledText from '../Components/ScrambleText';
 import SplitText from "../Components/SplitText";
 import CircularText from "../Components/CircularText";
 import Squares from '../Components/Squares';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // estilos obligatorios
-
-
+import TextPressure from '../Components/TextPressure';
 
 import EmblaCarousel from '../Components/EmblaCarousel';
 import '../Styles/base.css'
@@ -56,6 +55,21 @@ export default function paprobar(){
                   probarlo de manera
                 </ScrambledText>
                 <EmblaCarousel slides={SLIDES} options={OPTIONS} />
+                <div style={{position: 'relative', height: '300px'}}>
+                  <TextPressure
+                    className='heading'
+                    text="BIENVENIDOS-A-LA-DIVERSION"
+                    flex={true}
+                    alpha={false}
+                    stroke={false}
+                    width={true}
+                    weight={true}
+                    italic={true}
+                    textColor="#ffffff"
+                    strokeColor="#ff0000"
+                    minFontSize={130}
+                  />
+                </div>
             </div>
          </div>
 }

@@ -4,30 +4,47 @@ import EmblaCarousel from './Components/EmblaCarousel';
 import './Styles/base.css'
 import './Styles/embla.css'
 import SplitText from "./Components/SplitText";
+import TextPressure from "./Components/TextPressure";
 
 const lexend = Lexend_Giga({
   subsets: ['latin'],
   weight: '400'
 })
 
-const OPTIONS = { align: 'start', loop: true, draggable: true}
-const destinostur = 8
-const quepiensan = 6
-const DESTINOS = Array.from(Array(destinostur).keys())
-const PIENSAN = Array.from(Array(quepiensan).keys())
+const DESTINOS = [
+  <div className="bg-red-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh]">Santo Domingo</div>,
+  <div className="bg-blue-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh]">Punta Cana</div>,
+  <div className="bg-green-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh]">Jarabacoa</div>,
+  <div className="bg-yellow-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh]">Puerto Plata</div>,
+];
 
 export default function LadingPage() {
   return (
     <main className="Landing-Page mt-[6%]"
     >
+      <div style={{position: 'relative', height: '180px'}}>
+        <TextPressure
+          className='heading'
+          text="BIENVENIDOS-A-LA-DIVERSION!"
+          flex={true}
+          alpha={false}
+          stroke={false}
+          width={true}
+          weight={true}
+          italic={true}
+          textColor="#ffffff"
+          strokeColor="#ff0000"
+          minFontSize={70}
+        />
+      </div>
           {/*Destinos Turisticos*/}
-      <section className="Destinos-Turisticos w-full flex flex-col justify-center"
+      <section className="Destinos-Turisticos w-full flex flex-col justify-center p-[2%]"
       >
         <SplitText
-          className={`${lexend.className} heading text-center`}
+          className={`${lexend.className} heading text-center mb-[5%]`}
           text="DESTINOS TURISTICOS"
         />
-        <EmblaCarousel slides={DESTINOS} options={OPTIONS} />
+        <EmblaCarousel slides={DESTINOS} options={{align: 'start', loop: true, draggable: true}}/>
       </section>
 
         {/*Que piensa la gente*/}
