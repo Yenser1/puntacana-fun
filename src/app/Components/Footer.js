@@ -5,10 +5,10 @@ import Navbar from "./Navbar";
 
 function Footer(){
     return (
-        <footer className="w-full bg-red-800 flex
+        <footer className="w-full bg-red-800 flex flex-wrap
                         justify-center footerBG pt-[6%]"
       >
-        <section className="flex justify-between flex-wrap"
+        <section className="flex justify-center flex-wrap"
         >
             <div className="flex flex-col w-[40vw] justify-center"
             >

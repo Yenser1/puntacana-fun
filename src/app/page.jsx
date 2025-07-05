@@ -12,10 +12,70 @@ const lexend = Lexend_Giga({
 })
 
 const DESTINOS = [
-  <div className="bg-red-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh]">Santo Domingo</div>,
-  <div className="bg-blue-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh]">Punta Cana</div>,
-  <div className="bg-green-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh]">Jarabacoa</div>,
-  <div className="bg-yellow-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh]">Puerto Plata</div>,
+  <div className="bg-red-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative">
+    <Image src={'/SantoDomingoBG.png'}
+           fill
+           className="rounded-4xl"
+    />
+    <h1 className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold heading"
+    >Santo Domingo</h1>
+  </div>,
+  <div className="bg-blue-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative">
+    <Image src={'/BuggiesBG.png'}
+           fill
+           className="rounded-4xl"
+    />
+    <h1 className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold heading"
+    >Buggies</h1>
+  </div>,
+  <div className="bg-green-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative">
+    <Image src={'/PuntaCanaBG.png'}
+           fill
+           className="rounded-4xl"
+    />
+    <h1 className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold heading shadow-2xl"
+    >Punta Cana</h1>
+  </div>,
+  <div className="bg-green-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative">
+    <Image src={'/AltosDeChavonBG.webp'}
+           fill
+           className="rounded-4xl"
+    />
+    <h1 className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold heading shadow-2xl"
+    >Altos de Chavon</h1>
+  </div>,
+  <div className="bg-green-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative">
+    <Image src={'/SpeedBoatBG.jpg'}
+           fill
+           className="rounded-4xl"
+    />
+    <h1 className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold heading shadow-2xl"
+    >Speed Boat</h1>
+  </div>,
+  <div className="bg-green-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative">
+    <Image src={'/SamanaBG.jpeg'}
+           fill
+           className="rounded-4xl"
+    />
+    <h1 className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold heading shadow-2xl"
+    >Samana</h1>
+  </div>,
+  <div className="bg-green-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative">
+    <Image src={'/MontanaRedondaBG.jpg'}
+           fill
+           className="rounded-4xl"
+    />
+    <h1 className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold heading shadow-2xl"
+    >Montana Redonda</h1>
+  </div>,
+  <div className="bg-green-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative">
+    <Image src={'/AltosDeChavonBG.webp'}
+           fill
+           className="rounded-4xl"
+    />
+    <h1 className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold heading shadow-2xl"
+    >Altos de Chavon</h1>
+  </div>
 ];
 
 export default function LadingPage() {
@@ -25,16 +85,16 @@ export default function LadingPage() {
       <div style={{position: 'relative', height: '180px'}}>
         <TextPressure
           className='heading'
-          text="BIENVENIDOS-A-LA-DIVERSION!"
+          text="BIENVENIDOS-A-LA-DIVERSION"
           flex={true}
           alpha={false}
           stroke={false}
           width={true}
           weight={true}
           italic={true}
-          textColor="#ffffff"
+          textColor="white"
           strokeColor="#ff0000"
-          minFontSize={70}
+          minFontSize={0}
         />
       </div>
           {/*Destinos Turisticos*/}
@@ -43,6 +103,7 @@ export default function LadingPage() {
         <SplitText
           className={`${lexend.className} heading text-center mb-[5%]`}
           text="DESTINOS TURISTICOS"
+          splitType="words"
         />
         <EmblaCarousel slides={DESTINOS} options={{align: 'start', loop: true, draggable: true}}/>
       </section>
@@ -54,6 +115,7 @@ export default function LadingPage() {
         <SplitText
           className={`${lexend.className} heading text-center`}
           text="QUE PIENSAN DE NOSOTROS"
+          splitType="words"
         />
           <div className="piensan w-full flex flex-wrap justify-between items-center "
           >
@@ -81,6 +143,7 @@ export default function LadingPage() {
           <SplitText
             className={`${lexend.className} heading text-center`}
             text="ACERCA DE NOSOTROS"
+            splitType="words"
           />
           <p className="text-center paragraf"
           >
