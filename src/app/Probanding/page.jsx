@@ -2,6 +2,8 @@ import ScrambledText from '../Components/ScrambleText';
 import SplitText from "../Components/SplitText";
 import CircularText from "../Components/CircularText";
 import Squares from '../Components/Squares';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // estilos obligatorios
+
 
 
 import EmblaCarousel from '../Components/EmblaCarousel';

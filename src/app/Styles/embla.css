@@ -30,6 +30,10 @@
 }
 .embla__slide {
   min-width: 0;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex: 0 0 var(--slide-size);
   padding-left: var(--slide-spacing);
 }
