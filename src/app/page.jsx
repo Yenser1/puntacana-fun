@@ -7,6 +7,7 @@ import SplitText from "./Components/SplitText";
 import TextPressure from "./Components/TextPressure";
 import Link from "next/link";
 import ScrambledText from "./Components/ScrambleText";
+import Card from "./Components/Card";
 
 const lexend = Lexend_Giga({
   subsets: ['latin'],
@@ -140,29 +141,26 @@ export default function LadingPage() {
           text="QUE PIENSAN DE NOSOTROS 🤔"
           splitType="chars"
         />
-          <div className="piensan w-full flex flex-wrap justify-between items-center "
+          <div className="piensan w-full flex flex-wrap justify-between items-center py-[2%] px-[4%]"
           >
-            <div className="persona1 w-1/4 min-w-[300px] p-[2%] flex justify-center items-center"
-            >
-              <h1 className="persona"
-              >Pedro Navaja
-              </h1>
-
-            </div>
-            <div className="persona1 w-1/4 min-w-[300px] p-[2%] flex justify-center items-center"
-            >
-              <h1 className="persona"
-              >Juan Cordones
-              </h1>
-
-            </div>
-            <div className="persona1 w-1/4 min-w-[300px] p-[2%] flex justify-center items-center"
-            >
-              <h1 className="persona"
-              >Anita Languardina
-              </h1>
-
-            </div>
+            <Card className={''}
+                  persona={'Perensejo'}
+                  fecha={'06/07/2025'}
+                  personaStyle={'text-black'}
+                  contenido={'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima repudiandae tenetur quidem harum at provident illo quaerat vitae, esse, nostrum nulla libero cum dolores laborum tempore ducimus delectus ea natus!'}
+            />
+            <Card className={''}
+                  persona={'Zutanejo'}
+                  fecha={'02/12/2015'}
+                  personaStyle={'text-black'}
+                  contenido={'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima repudiandae tenetur quidem harum at provident illo quaerat vitae, esse, nostrum nulla libero cum dolores laborum tempore ducimus delectus ea natus!'}
+            />
+            <Card className={''}
+                  persona={'Fulano'}
+                  fecha={'23/01/2005'}
+                  personaStyle={'text-black'}
+                  contenido={'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima repudiandae tenetur quidem harum at provident illo quaerat vitae, esse, nostrum nulla libero cum dolores laborum tempore ducimus delectus ea natus!'}
+            />
           </div>
       </section>
 
@@ -178,7 +176,7 @@ export default function LadingPage() {
             splitType="chars"
           />
 
-          <div className="flex p-0"
+          <div className="flex flex-col p-0 items-center"
           >
           <ScrambledText
             className="paragraf text-justify p-[2%]"
@@ -189,6 +187,11 @@ export default function LadingPage() {
           >
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, temporibus? Eaque, sint nulla vel id corporis aut fugiat ut, explicabo aspernatur eveniet accusamus et, ipsa cumque velit tenetur quisquam accusantium?
           </ScrambledText>
+          <Link href={'./Acerca-De-Nosotros'}
+                className="paragraf text-amber-300 border-2 p-[1%] rounded-3xl font-bold hover:scale-110 transition-transform duration-200"
+          >
+          Leer Mas
+          </Link>
           </div>
         </section>
 

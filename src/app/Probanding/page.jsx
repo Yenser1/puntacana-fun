@@ -67,7 +67,7 @@ export default function paprobar(){
                   />
                   <Card className={""}
                         personaStyle={"text-black"}
-                        persona={'Bob-Patino'}
+                        persona={'Bob Patino'}
                         contenido={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima architecto ducimus sed pariatur tempora, enim, itaque dolores natus vel laudantium omnis voluptatem ipsam nostrum nobis aperiam repudiandae, voluptates labore dignissimos.'}
                   />
                 </div>                  
