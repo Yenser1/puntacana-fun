@@ -5,7 +5,7 @@ function Card({ persona, contenido, svg, className, personaStyle,fecha,
                 
  }){
     return(
-        <div className={"bg-amber-300 p-[2%] w-1/4 rounded-4xl" + " " + className}
+        <div className={"bg-amber-300 p-[2%] w-1/4 min-w-[400px] rounded-4xl" + " " + className}
              style={{backgroundColor: 'color-mix(in srgb, lightblue 40%, transparent 60%)'}}
         >
             <h1 className={"headingfoot underline" +" "+ personaStyle}

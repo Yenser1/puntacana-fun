@@ -141,7 +141,7 @@ export default function LadingPage() {
           text="QUE PIENSAN DE NOSOTROS 🤔"
           splitType="chars"
         />
-          <div className="piensan w-full flex flex-wrap justify-between items-center py-[2%] px-[4%]"
+          <div className="piensan w-full flex flex-wrap justify-center items-center py-[2%] px-[4%] gap-10 gap-y-10"
           >
             <Card className={''}
                   persona={'Perensejo'}
