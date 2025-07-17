@@ -11,7 +11,8 @@ import Card from "./Components/Card";
 
 const lexend = Lexend_Giga({
   subsets: ['latin'],
-  weight: '400'
+  weight: '400',
+  preload: true,
 })
 const montserrat = Montserrat({
   subsets: ['latin']
