@@ -18,87 +18,88 @@ const montserrat = Montserrat({
 })
 
 const DESTINOS = [
-  <div className="bg-red-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative">
-    <Image src={'/SantoDomingoBG.png'}
-           fill
-           className="rounded-4xl"
-           alt="Imagen de fondo de Santo Domingo"
-    />
+  <div className="bg-red-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative"
+       style={{
+          backgroundImage:'url("/SantoDomingoBG.png")',
+          backgroundSize:'cover'
+        }}
+  >
     <h1 className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold heading"
     >Santo Domingo</h1>
   </div>,
-  <div className="bg-blue-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative">
-    <Image src={'/BuggiesBG.png'}
-           fill
-           className="rounded-4xl"
-           alt="Imagen de fondo de Buggies"
-    />
+  <div className="bg-blue-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative"
+        style={{
+          backgroundImage:'url("/BuggiesBG.png")',
+          backgroundSize:'cover'
+        }}
+  >
+    
     <h1 className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold heading"
     >Buggies</h1>
   </div>,
-  <div className="bg-green-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative">
-    <Image src={'/PuntaCanaBG.png'}
-           fill
-           className="rounded-4xl"
-           alt="Imagen de fondo de Punta Cana"
-    />
+  <div className="bg-green-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative"
+        style={{
+          backgroundImage:'url("/PuntaCanaBG.png")',
+          backgroundSize:'cover'
+        }}
+  >
     <h1 className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold heading shadow-2xl"
     >Punta Cana</h1>
   </div>,
-  <div className="bg-green-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative">
-    <Image src={'/AltosDeChavonBG.webp'}
-           fill
-           className="rounded-4xl"
-           alt="Imagen de fondo de Altos de Chavon"
-    />
+  <div className="altos bg-green-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative"
+        style={{
+          backgroundImage:'url("/AltosDeChavonBG.webp")',
+          backgroundSize:'cover'
+        }}
+        >
     <h1 className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold heading shadow-2xl"
     >Altos de Chavon</h1>
   </div>,
-  <div className="bg-green-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative">
-    <Image src={'/SpeedBoatBG.jpg'}
-           fill
-           className="rounded-4xl"
-           alt="Imagen de fondo de Speed Boat"
-    />
+  <div className="speed bg-green-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative"
+        style={{
+          backgroundImage:'url("/SpeedBoatBG.jpg")',
+          backgroundSize:'cover'
+        }}
+        >
     <h1 className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold heading shadow-2xl"
     >Speed Boat</h1>
   </div>,
-  <div className="bg-green-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative">
-    <Image src={'/SamanaBG.jpeg'}
-           fill
-           className="rounded-4xl"
-           alt="Imagen de fondo de Samana"
-    />
+  <div className="samana bg-green-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative"
+        style={{
+          backgroundImage:'url("/SamanaBG.jpeg")',
+          backgroundSize:'cover'
+        }}
+        >
     <h1 className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold heading shadow-2xl"
     >Samana</h1>
   </div>,
-  <div className="bg-green-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative">
-    <Image src={'/MontanaRedondaBG.jpg'}
-           fill
-           className="rounded-4xl"
-           alt="Imagen de fondo de Montana Redonda"
-    />
-    <h1 className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold heading shadow-2xl"
-    >Montana Redonda</h1>
-  </div>,
-  <div className="bg-green-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative">
-    <Image src={'/IslaSaonaBG.jpg'}
-           fill
-           className="rounded-4xl"
-           alt="Imagen de fondo de Isla Saona"
-    />
+  <div className="bg-green-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative"
+        style={{
+          backgroundImage:'url("/IslaSaonaBG.jpg")',
+          backgroundSize:'cover'
+        }}
+        >
     <h1 className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold heading shadow-2xl"
     >Isla Saona</h1>
   </div>,
   
-  <div className="bg-green-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative">
-    <Image src={'/IslaCatalinaBG.jpg'}
-           fill
-           className="rounded-4xl"
-           alt="Imagen de fondo de Isla Catalinas"
-    />
+  <div className="bg-green-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative"
+        style={{
+          backgroundImage:'url("/IslaCatalinaBG.jpg")',
+          backgroundSize:'cover'
+        }}
+        >
     <h1 className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold heading shadow-2xl"
     >Isla Catalina</h1>
+  </div>,
+  <div className="samana bg-green-300 p-8 rounded-4xl text-center w-[100vw] h-[40vh] relative"
+        style={{
+          backgroundImage:'url("/MontanaRedondaBG.jpg")',
+          backgroundSize:'cover'
+        }}
+        >
+    <h1 className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold heading shadow-2xl"
+    >Montana Redonda</h1>
   </div>
 ];
 
