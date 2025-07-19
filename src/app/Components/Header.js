@@ -4,8 +4,20 @@ import "../Styles/globals.css";
 import HamburguerMenu from "./HamburguerMenu";
 import Navbar from "./Navbar";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+
+const BREAKPOINT = 1200
 
 function Header(){
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checksize = () => setIsMobile(window.innerWidth < BREAKPOINT);
+    checksize()
+    window.addEventListener('resize', checksize)
+    return () => window.removeEventListener('resize', checksize)
+  }, [])
+
     return(
         <header className="w-full sticky top-0 z-100 flex
                         justify-center bg-[#87ceeb] flex-col
@@ -28,8 +40,7 @@ function Header(){
               className="hover:scale-110 transition-transform duration-350"
         />
         </Link>
-              <HamburguerMenu/>
-              <Navbar/>
+              {isMobile? <HamburguerMenu/>:<Navbar/>}
       </header>
     )
 }

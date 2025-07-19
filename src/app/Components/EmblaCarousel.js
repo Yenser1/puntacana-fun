@@ -29,11 +29,10 @@ const EmblaCarousel = (props) => {
         </div>
       </div>
 
-      <div className="embla__controls w-full top-1/2"
+      <div className="embla__controls w-full top-1/2 text-amber-300"
       style={{
-        color: 'black',
         position: 'absolute',
-        transform: 'translate(50% 50%)'
+        transform: 'translateY(-50%)',
       }}
       >
         <div className="embla__buttons">

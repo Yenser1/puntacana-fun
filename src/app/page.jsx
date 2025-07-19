@@ -138,11 +138,9 @@ export default function LadingPage() {
 
       <section className="Que-Piensan-De-Nosotros w-full flex flex-col justify-center"
       >
-        <SplitText
-          className={`${lexend.className} heading text-center`}
-          text="QUE PIENSAN DE NOSOTROS 🤔"
-          splitType="chars"
-        />
+          <h1 className={`${lexend.className} heading text-center`}
+          >QUE PIENSAN DE NOSOTROS 🤔
+          </h1>
           <div className="piensan w-full flex flex-wrap justify-center items-center py-[2%] px-[4%] gap-10 gap-y-10"
           >
             <Card className={''}
@@ -167,16 +165,14 @@ export default function LadingPage() {
       </section>
 
         {/*Acerca de Nosotros*/}
-        <section className="Acerca-De-Nosotros h-[30vh] flex flex-col justify-center items-center"
+        <section className="Acerca-De-Nosotros h-[30vh] min-h-96 flex flex-col justify-center items-center"
                  style={{
                   backgroundColor: 'color-mix(in srgb, #333 30%, transparent 70%)',
                  }}
         >
-          <SplitText
-            className={`${lexend.className} heading text-center`}
-            text="ACERCA DE NOSOTROS"
-            splitType="chars"
-          />
+          <h1 className={`${lexend.className} heading text-center`}
+          >Acerca de Nosotros
+          </h1>
 
           <div className="flex flex-col p-0 items-center"
           >
@@ -200,10 +196,10 @@ export default function LadingPage() {
         {/*Contacto*/}
         <section className="Contacto flex flex-col justify-center items-center"
         >
-          <SplitText
-            className={`${lexend.className} heading text-center`}
-            text="Contacto 📠"
-          />
+          <h1 className={`${lexend.className} heading text-center`}
+          >Contacto 📠
+          </h1>
+
           <div className="Contactanos"
           >
           </div>
