@@ -18,7 +18,7 @@ const EmblaCarousel = (props) => {
   } = usePrevNextButtons(emblaApi);
 
   return (
-    <section className="embla">
+    <section className="embla relative rounded-4xl">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {slides.map((slide, index) => (
@@ -29,7 +29,13 @@ const EmblaCarousel = (props) => {
         </div>
       </div>
 
-      <div className="embla__controls">
+      <div className="embla__controls w-full top-1/2"
+      style={{
+        color: 'black',
+        position: 'absolute',
+        transform: 'translate(50% 50%)'
+      }}
+      >
         <div className="embla__buttons">
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
