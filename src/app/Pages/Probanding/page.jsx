@@ -1,11 +1,11 @@
 'use client'
-import ScrambledText from '../Components/ScrambleText';
-import SplitText from "../Components/SplitText";
-import CircularText from "../Components/CircularText";
-import TextPressure from '../Components/TextPressure';
-import Card from '../Components/Card';
+import ScrambledText from '../../Components/ScrambleText';
+import SplitText from "../../Components/SplitText";
+import CircularText from "../../Components/CircularText";
+import TextPressure from '../../Components/TextPressure';
+import Card from '../../Components/Card';
 
-import EmblaCarousel from '../Components/EmblaCarousel';
+import EmblaCarousel from '../../Components/EmblaCarousel';
 import '../Styles/base.css'
 import '../Styles/embla.css'
 
