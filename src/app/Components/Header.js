@@ -40,7 +40,9 @@ function Header(){
               className="hover:scale-110 transition-transform duration-350"
         />
         </Link>
-              {isMobile? <HamburguerMenu/>:<Navbar/>}
+              {isMobile? <HamburguerMenu/> 
+                          
+                          :<Navbar/>}
       </header>
     )
 }
