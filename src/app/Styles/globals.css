@@ -1,78 +1,79 @@
 @import "tailwindcss";
-main, footer{
-  color: white;
+main,
+footer {
+    color: white;
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #ffffff;
+    --foreground: #171717;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-.heading{
+.heading {
     font-size: clamp(3rem, calc(2vw + 1rem), 10rem);
     text-shadow: 0 0 15px black;
 }
-.headingfoot{
-  font-size: clamp(2rem, calc(1.2vw + 1rem), 3rem);
+.headingfoot {
+    font-size: clamp(2rem, calc(1.2vw + 1rem), 3rem);
     text-shadow: 0 0 15px black;
 }
-.paragraf{
+.paragraf {
     font-size: clamp(16px, calc(1vw + 1rem - 1rem), 3rem);
 }
-.paragraffoot{
+.paragraffoot {
     font-size: clamp(20px, calc(1.3vw + 1rem - 1rem), 3rem);
 }
-.navlinks{
+.navlinks {
     font-size: clamp(16px, 1.3vw, 3rem);
 }
-.paragrafbot{
-    font-size: clamp(10px,1vw,5rem);
+.paragrafbot {
+    font-size: clamp(10px, 1vw, 5rem);
 }
-.copira{
+.copira {
     font-size: clamp(1rem, 2vw, 5rem);
 }
-.persona{
+.persona {
     font-size: clamp(2rem, 1.4vw, 5rem);
 }
-.socialLinks{
-  width: clamp(50px, 2vw, 150px);
-  height: clamp(50px, 2vw, 150px);
+.socialLinks {
+    width: clamp(50px, 2vw, 150px);
+    height: clamp(50px, 2vw, 150px);
 }
 header {
-        background-image: url('/FondoPlaya.png');
-        background-size: cover;
-        background-position: top ;
-        mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
-        -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    background-image: url("/FondoPlaya.png");
+    background-size: cover;
+    background-position: top;
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
 }
 footer {
-        background-image: url(/BlurSand.png);
-        background-size: cover;
-        mask-image: linear-gradient(to top, black 60%, transparent 100%);
-        -webkit-mask-image: linear-gradient(to top, black 60%, transparent 100%);
+    background-image: url(/BlurSand.png);
+    background-size: cover;
+    mask-image: linear-gradient(to top, black 60%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to top, black 60%, transparent 100%);
 }
 body {
-        background-image: url(/FondoArena.png);
-        background-size: cover;
+    background-image: url(/FondoArena.png);
+    background-size: cover;
 }
