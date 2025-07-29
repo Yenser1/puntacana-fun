@@ -3,7 +3,6 @@ import EmblaCarousel from "./Components/EmblaCarousel";
 import "./Styles/base.css";
 import "./Styles/embla.css";
 import SplitText from "./Components/SplitText";
-import TextPressure from "./Components/TextPressure";
 import Link from "next/link";
 import ScrambledText from "./Components/ScrambleText";
 import Card from "./Components/Card";
@@ -24,6 +23,7 @@ const DESTINOS = [
     <Destino url={"ParasailingBG.jpg"} name={"Parasailing"} />,
     <Destino url={"SamanaBG.jpeg"} name={"Samana"} />,
     <Destino url={"SpeedBoatBG.jpg"} name={"Speed Boat"} />,
+    <Destino url={"MontanaRedondaBG.jpg"} name={"Montana Redonda"} />,
 ];
 
 export default function LadingPage() {
