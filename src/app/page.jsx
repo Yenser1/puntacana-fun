@@ -28,11 +28,11 @@ const DESTINOS = [
 
 export default function LadingPage() {
     return (
-        <main className="Landing-Page mt-[6%]">
+        <main className="Landing-Page m-0 p-0">
             {/*Destinos Turisticos*/}
             <section className="Destinos-Turisticos w-full flex flex-col justify-center p-[2%]">
                 <SplitText className={`${lexend.className} heading text-center mb-[5%]`} text="DESTINOS TURISTICOS" splitType="chars" />
-                <EmblaCarousel slides={DESTINOS} options={{ align: "start", loop: true, draggable: true }} />
+                <EmblaCarousel slides={DESTINOS} options={{ align: "start", loop: true, draggable: true, dragFree: true }} />
             </section>
 
             {/*Que piensa la gente*/}
