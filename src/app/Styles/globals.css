@@ -74,7 +74,9 @@ footer {
     mask-image: linear-gradient(to top, black 60%, transparent 100%);
     -webkit-mask-image: linear-gradient(to top, black 60%, transparent 100%);
 }
-body {
+body,
+main,
+html {
     background-size: cover;
     background-color: #c6a664;
     background-image: url(/FondoArena.png);
