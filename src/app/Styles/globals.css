@@ -63,13 +63,13 @@ body {
 header {
     background-size: cover;
     background-color: #2495a1;
-    background-image: url(/FondoPlaya.png);
+    background-image: url(/FondoPlaya.webp);
     background-position: top;
     mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
     -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
 }
 footer {
-    background-image: url(/BlurSand.png);
+    background-image: url(/BlurSand.webp);
     background-size: cover;
     mask-image: linear-gradient(to top, black 60%, transparent 100%);
     -webkit-mask-image: linear-gradient(to top, black 60%, transparent 100%);
@@ -79,5 +79,5 @@ main,
 html {
     background-size: cover;
     background-color: #c6a664;
-    background-image: url(/FondoArena.png);
+    background-image: url(/FondoArena.webp);
 }
