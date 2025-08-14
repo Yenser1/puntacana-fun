@@ -1,5 +1,4 @@
 "use client";
-import ScrambledText from "./ScrambleText";
 import { motion } from "framer-motion";
 
 function Card({ persona, contenido, svg, className, personaStyle, fecha }) {
@@ -25,9 +24,7 @@ function Card({ persona, contenido, svg, className, personaStyle, fecha }) {
                 </svg>
             </div>
 
-            <ScrambledText className="paragraf text-justify p-[2%] text-[#333]" radius={70} duration={1.2} speed={0.5} scrambleChars={".:"}>
-                {contenido}
-            </ScrambledText>
+            <p className="paragraf text-justify p-[2%] text-[#333]">{contenido}</p>
             <h3 className="text-right text-black font-extrabold">{fecha}</h3>
         </div>
     );

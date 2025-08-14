@@ -80,10 +80,10 @@ export default function LadingPage() {
                 <h1 className={`${lexend.className} heading text-center`}>Acerca de Nosotros</h1>
 
                 <div className="flex flex-col p-0 items-center">
-                    <ScrambledText className="paragraf text-justify p-[2%]" radius={70} duration={1.2} speed={0.5} scrambleChars={".:"}>
+                    <p className="paragraf text-justify">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, temporibus? Eaque, sint nulla vel id corporis aut fugiat ut, explicabo aspernatur eveniet accusamus et, ipsa
                         cumque velit tenetur quisquam accusantium?
-                    </ScrambledText>
+                    </p>
                     <Link href={"./Acerca-De-Nosotros"} className="paragraf text-amber-300 border-2 p-[1%] rounded-3xl font-bold hover:scale-110 transition-transform duration-200">
                         Leer Mas
                     </Link>
