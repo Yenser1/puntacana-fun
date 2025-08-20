@@ -71,7 +71,7 @@ export default function LadingPage() {
 
             {/*Acerca de Nosotros*/}
             <section
-                className="Acerca-De-Nosotros h-[30vh] min-h-96 flex flex-col justify-center items-center"
+                className="Acerca-De-Nosotros flex flex-col justify-center items-center py-7"
                 style={{
                     backgroundColor: "color-mix(in srgb, #333 30%, transparent 70%)",
                 }}
@@ -79,11 +79,11 @@ export default function LadingPage() {
                 <h1 className={`${lexend.className} heading text-center`}>Acerca de Nosotros</h1>
 
                 <div className="flex flex-col p-0 items-center">
-                    <p className="paragraf text-justify">
+                    <p className="paragraf text-center px-[5%]">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, temporibus? Eaque, sint nulla vel id corporis aut fugiat ut, explicabo aspernatur eveniet accusamus et, ipsa
                         cumque velit tenetur quisquam accusantium?
                     </p>
-                    <Link href={"./Acerca-De-Nosotros"} className="paragraf text-amber-300 border-2 p-[1%] rounded-3xl font-bold hover:scale-110 transition-transform duration-200">
+                    <Link href={"./Acerca-De-Nosotros"} className="paragraf text-amber-300 border-2 p-4 rounded-3xl font-bold hover:scale-110 transition-transform duration-200">
                         Leer Mas
                     </Link>
                 </div>
