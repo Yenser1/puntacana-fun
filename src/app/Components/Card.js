@@ -15,7 +15,7 @@ function Card({ persona, contenido, svg, className, personaStyle, fecha }) {
             initial={{ y: -50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ ease: "easeInOut", duration: 0.5 }}
-            className={`${lexend.className} card bg-[#0097b2] p-[2%] pb-17 w-1/4 max-w-[400px] min-h-full rounded-4xl text-white relative` + " " + className}
+            className={`${lexend.className} card bg-[#0097b2] p-[2%] pb-17 w-1/4 min-w-[400px] max-w-[400px] min-h-full rounded-4xl text-white relative` + " " + className}
             onClick={() => {}}
         >
             <div className="flex justify-between">
