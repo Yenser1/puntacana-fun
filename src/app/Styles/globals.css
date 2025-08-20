@@ -69,6 +69,11 @@ header {
     -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
 }
 footer {
+    background-color: #f5deb3; /* Color base de la arena */
+    background-image: radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.2) 0%, transparent 20%), radial-gradient(circle at 90% 80%, rgba(255, 255, 255, 0.2) 0%, transparent 20%),
+        radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.1) 1px, transparent 1px), linear-gradient(to bottom, #e6c88c, #f5deb3, #e6c88c);
+    background-size: 200% 200%, /* Tamaño de los gradientes radiales */ 200% 200%, 20px 20px, /* Tamaño del "grano" de arena */ 100% 100%;
+    animation: sandMovement 10s infinite alternate;
     background-image: url(/BlurSand.webp);
     background-size: cover;
     mask-image: linear-gradient(to top, black 60%, transparent 100%);

@@ -4,7 +4,6 @@ import "./Styles/base.css";
 import "./Styles/embla.css";
 import SplitText from "./Components/SplitText";
 import Link from "next/link";
-import ScrambledText from "./Components/ScrambleText";
 import Card from "./Components/Card";
 import Destino from "./Components/Destinos";
 
@@ -31,7 +30,7 @@ export default function LadingPage() {
         <main className="Landing-Page m-0 p-0">
             {/*Destinos Turisticos*/}
             <section className="Destinos-Turisticos w-full flex flex-col justify-center p-[2%]">
-                <SplitText className={`${lexend.className} heading text-center mb-[5%]`} text="DESTINOS TURISTICOS" splitType="chars" />
+                <h1 className={`${lexend.className} heading text-center mb-[5%]`}>DESTINOS TURISTICOS</h1>
                 <EmblaCarousel slides={DESTINOS} options={{ align: "start", loop: true, draggable: true, dragFree: true }} />
             </section>
 
@@ -46,7 +45,7 @@ export default function LadingPage() {
                         fecha={"06/07/2025"}
                         personaStyle={"text-black"}
                         contenido={
-                            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima repudiandae tenetur quidem harum at provident illo quaerat vitae, esse, nostrum nulla libero cum dolores laborum tempore ducimus delectus ea natus!"
+                            "Todo fue perfecto desde la recogida hasta el regreso. Los guías fueron muy divertidos y profesionales, nos hicieron sentir seguros en todo momento. ¡Las playas de Saona eran un paraíso! 100% recomendado."
                         }
                     />
                     <Card
@@ -55,7 +54,7 @@ export default function LadingPage() {
                         fecha={"02/12/2015"}
                         personaStyle={"text-black"}
                         contenido={
-                            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima repudiandae tenetur quidem harum at provident illo quaerat vitae, esse, nostrum nulla libero cum dolores laborum tempore ducimus delectus ea natus!"
+                            "Elegimos la excursión a la Isla Saona y superó todas nuestras expectativas. La organización fue impecable, el almuerzo delicioso y los paisajes, de ensueño. Una experiencia que repetiríamos sin dudar."
                         }
                     />
                     <Card
@@ -64,7 +63,7 @@ export default function LadingPage() {
                         fecha={"23/01/2005"}
                         personaStyle={"text-black"}
                         contenido={
-                            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima repudiandae tenetur quidem harum at provident illo quaerat vitae, esse, nostrum nulla libero cum dolores laborum tempore ducimus delectus ea natus!"
+                            "Muy profesional la compañía. Reservamos varios tours con ellos y todos fueron puntuales, divertidos y bien organizados. El personal hace que la experiencia sea aún mejor. ¡Les damos las 5 estrellas merecidas!"
                         }
                     />
                 </div>

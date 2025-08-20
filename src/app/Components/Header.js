@@ -22,7 +22,7 @@ function Header() {
         <header
             className="w-full sticky top-0 z-100 flex
                         justify-center bg-[#87ceeb] flex-col
-                        pb-[3%] items-center"
+                        pb-[3%] items-center backdrop-blur-md"
             style={{
                 height: "clamp(80px, 23vh, 300rem)",
                 color: "white",
